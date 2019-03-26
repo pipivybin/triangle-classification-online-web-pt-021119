@@ -9,7 +9,8 @@ def initialize(size1, size2, size3)
 end
 
 def kind
-  if
+  if @size1 + @size2 <= @size3
+    raise TriangleError
 end
 
 class TriangleError < StandardError
