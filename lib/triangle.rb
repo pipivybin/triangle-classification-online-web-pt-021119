@@ -16,7 +16,7 @@ def kind
     elsif x + y <= z || x + z <= y || y + z <= x
       raise TriangleError
     elsif x == y && y == z
-      kind = :equilateral
+      @kind = :equilateral
     elsif x == y && x != z || y == z && y != x || x == z && x != y
       kind = :isosceles
     else
