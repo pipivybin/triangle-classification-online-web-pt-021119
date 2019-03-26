@@ -9,7 +9,7 @@ def initialize(x, y, z)
 end
 
 def kind
-  if @size1 + @size2 <= @size3 || @size1
+  if @x + @y <= @z || @size1
     raise TriangleError
 end
 
