@@ -18,9 +18,9 @@ def kind
     elsif x == y && y == z
       @kind = :equilateral
     elsif x == y && x != z || y == z && y != x || x == z && x != y
-      kind = :isosceles
+      @kind = :isosceles
     else
-      kind = :scalene
+      @kind = :scalene
 end
 
 class TriangleError < StandardError
