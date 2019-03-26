@@ -22,6 +22,7 @@ def kind
     else
       @kind = :scalene
 end
+end
 
 class TriangleError < StandardError
 end
