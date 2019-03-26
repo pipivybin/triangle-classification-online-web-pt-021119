@@ -1,15 +1,15 @@
 class Triangle
 
-attr_reader :size1, :size2, :size3
+attr_reader :x, :y, :z
 
-def initialize(size1, size2, size3)
-  @size1 = size1
-  @size2 = size2
-  @size3 = size3
+def initialize(x, y, z)
+  @x = x
+  @y = y
+  @z = z
 end
 
 def kind
-  if @size1 + @size2 <= @size3
+  if @size1 + @size2 <= @size3 || @size1
     raise TriangleError
 end
 
