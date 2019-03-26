@@ -1,6 +1,6 @@
 class Triangle
 
-attr_accessor :equilateral, :isosceles, :scalene, :kind
+# attr_accessor :equilateral, :isosceles, :scalene, :kind
 
 attr_reader :x, :y, :z
 
